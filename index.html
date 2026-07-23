@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizal's Legacy | The Hero's Journey</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="pre-header">
+            <p>“The youth is the hope of our future.” — Dr. José Rizal</p>
+        </div>
+        <nav class="navbar">
+            <div class="logo">Rizal's <span>Legacy</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#literary">Works</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="hero-subtitle">Architect of a Nation's Conscience</span>
+            <h1>Dr. José Rizal</h1>
+            <p>Explore the extraordinary life, timeless writings, and enduring legacy of the national hero of the Philippines.</p>
+            <a href="#about" class="btn-primary">Begin the Journey</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="about" class="content-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">The Quintessential Filipino</h2>
+            <p class="lead-text">
+                Dr. Jose Protacio Rizal Mercado y Alonso Realonda stands as a beacon of intellectual brilliance, unwavering patriotism, and profound sacrifice. His contributions transcended mere advocacy; he ignited the flames of Philippine nationalism through the power of the pen.
+            </p>
+            
+            <!-- Interactive Fact Carousel -->
+            <div class="fact-carousel">
+                <button class="carousel-btn prev-btn" id="prevFact">&#10094;</button>
+                <div class="carousel-inner">
+                    <div class="fact-card active">
+                        <span class="fact-tag">Fact I</span>
+                        <h3>A Polymath's Mind</h3>
+                        <p>Rizal was fluent in over 22 languages including Latin, Greek, German, French, English, Spanish, Japanese, and Hebrew.</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-tag">Fact II</span>
+                        <h3>Ophthalmic Surgeon</h3>
+                        <p>He specialized in ophthalmology in Europe so he could personally operate on and restore his mother's failing eyesight.</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-tag">Fact III</span>
+                        <h3>The Pen over the Sword</h3>
+                        <p>Unlike violent revolutionaries, Rizal firmly believed that true freedom and reform must be achieved through education and moral enlightenment.</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" id="nextFact">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive 3D Flip Biography Section -->
+    <section id="biography" class="content-section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">A Life Dedicated to Freedom</h2>
+            <p class="section-subtitle" data-aos="fade-up">Hover or tap cards to flip and discover key chapters of his life.</p>
+            
+            <div class="bio-grid">
+                <div class="bio-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bio-card-inner">
+                        <div class="bio-front early-life">
+                            <h3>Early Life & Family</h3>
+                        </div>
+                        <div class="bio-back">
+                            <h3>Calamba Roots</h3>
+                            <p>Born on June 19, 1861, in Calamba, Laguna. Raised in a wealthy, educated agricultural family that instilled in him early values of devotion, learning, and justice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bio-card-inner">
+                        <div class="bio-front education">
+                            <h3>Education & Mastery</h3>
+                        </div>
+                        <div class="bio-back">
+                            <h3>Academic Brilliance</h3>
+                            <p>Studied at Ateneo Municipal de Manila and UST before traveling to Spain, France, and Germany to master ophthalmology, philosophy, and arts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bio-card-inner">
+                        <div class="bio-front travels">
+                            <h3>Global Travels</h3>
+                        </div>
+                        <div class="bio-back">
+                            <h3>Observer of Nations</h3>
+                            <p>Journeyed through Asia, Europe, and America, gaining deep perspectives on democracy, human rights, and political reform that inspired his writings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bio-card-inner">
+                        <div class="bio-front writings">
+                            <h3>Propaganda Era</h3>
+                        </div>
+                        <div class="bio-back">
+                            <h3>La Solidaridad</h3>
+                            <p>Co-founded the Propaganda Movement in Spain, writing incisive essays and articles calling for equal rights for Filipinos under Spanish rule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Literary Works Section -->
+    <section id="literary" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Literary Works: The Pen as a Sword</h2>
+            
+            <div class="literary-grid">
+                <div class="book-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="book-cover">
+                        <img src="noli_me_tangere.jpg" alt="Noli Me Tangere Cover" onerror="this.src='https://via.placeholder.com/300x420?text=Noli+Me+Tangere'">
+                    </div>
+                    <h3>Noli Me Tángere</h3>
+                    <span class="book-tag">Touch Me Not (1887)</span>
+                    <p>A scathing exposure of Spanish clerical hypocrisy and colonial abuses. It awakened Filipino national consciousness and laid the moral groundwork for revolution.</p>
+                </div>
+
+                <div class="book-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="book-cover">
+                        <img src="el_filibusterismo.jpg" alt="El Filibusterismo Cover" onerror="this.src='https://via.placeholder.com/300x420?text=El+Filibusterismo'">
+                    </div>
+                    <h3>El Filibusterismo</h3>
+                    <span class="book-tag">The Reign of Greed (1891)</span>
+                    <p>The darker, politically charged sequel exploring the tragic consequences of failed reforms, anger, and armed rebellion through the sinister character of Simoun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="content-section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Timeline of Historic Events</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 19, 1861</span>
+                        <h3>Birth in Calamba</h3>
+                        <p>José Rizal is born in Calamba, Laguna, the seventh child of Francisco Mercado and Teodora Alonso.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">March 1887</span>
+                        <h3>Publication of Noli</h3>
+                        <p>Rizal finishes and publishes <em>Noli Me Tángere</em> in Berlin, Germany with financial help from Maximo Viola.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">July 3, 1892</span>
+                        <h3>La Liga Filipina</h3>
+                        <p>Founds <em>La Liga Filipina</em> in Tondo, Manila, advocating for peaceful civic unity and social reform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">December 30, 1896</span>
+                        <h3>Martyrdom at Bagumbayan</h3>
+                        <p>Rizal is executed by firing squad at Bagumbayan (now Rizal Park), solidifying his role as the national hero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Words That Shaped A Nation</h2>
+            
+            <div class="quotes-grid">
+                <blockquote class="quote-card" data-aos="zoom-in" data-aos-delay="100">
+                    <p>“He who does not know how to look back at where he came from will never get to his destination.”</p>
+                    <footer>— Dr. José Rizal</footer>
+                </blockquote>
+
+                <blockquote class="quote-card" data-aos="zoom-in" data-aos-delay="200">
+                    <p>“It is a useless life that is not consecrated to a great ideal. It is like a stone wasted on the field without becoming a part of any edifice.”</p>
+                    <footer>— Dr. José Rizal</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="content-section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Test Your Rizal Knowledge</h2>
+            
+            <div class="quiz-container" data-aos="fade-up">
+                <div id="quiz-box">
+                    <div class="quiz-progress"><span id="question-number">Question 1</span> / 3</div>
+                    <div class="question" id="quiz-question">Loading question...</div>
+                    <div class="options" id="quiz-options"></div>
+                    <div class="feedback" id="quiz-feedback"></div>
+                    <button id="next-btn" class="btn-primary hidden">Next Question</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-title">Dr. José Rizal Legacy Project</p>
+            <p>Dedicated to educating future generations about patriotism, honor, and enlightenment.</p>
+            <div class="footer-links">
+                <a href="#hero">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
