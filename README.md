@@ -1,7 +1,4 @@
-# `README.md`
-
-
-# 📜 La Luz Rizal
+## 📜 La Luz Rizal
 
 An interactive, vintage-themed educational website dedicated to exploring the life, literary masterpieces, and enduring legacy of Dr. José Rizal, the national hero of the Philippines.
 
