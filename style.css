@@ -630,9 +630,12 @@ h1, h2, h3 {
 /* ==========================================================================
    FOOTER & RESPONSIVE
    ========================================================================== */
+/* ==========================================================================
+   FOOTER COPYRIGHT STYLING
+   ========================================================================== */
 footer {
     background-color: #0b0a09;
-    padding: 40px 0;
+    padding: 40px 0 30px;
     text-align: center;
     border-top: 1px solid var(--border-color);
 }
@@ -640,15 +643,35 @@ footer {
 .footer-title {
     font-family: var(--font-heading);
     color: var(--accent-gold);
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+.footer-subtitle {
+    font-family: var(--font-serif);
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
 }
 
 .footer-links a {
-    color: var(--text-muted);
+    color: var(--accent-gold);
     text-decoration: none;
-    margin-top: 15px;
-    display: inline-block;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-gold-hover);
 }
 
 /* Safety Fallback: Ensures content is visible even if JS fails to load */
