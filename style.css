@@ -28,8 +28,14 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Avoid setting overflow-y: hidden on body/html as it disables window scrolling */
+}
+
 body {
     font-family: var(--font-body);
+    scroll-behavior: smooth;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.7;

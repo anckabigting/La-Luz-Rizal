@@ -1,3 +1,15 @@
+// Smooth Back-to-Top Handler
+const backToTopBtn = document.getElementById("back-to-top");
+
+if (backToTopBtn) {
+    backToTopBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevents standard URL jump glitches
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Initialize AOS Scroll Animations
     AOS.init({
