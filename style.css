@@ -40,6 +40,8 @@ body {
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 /* Scroll Progress Indicator (Changed Red gradient to Gold/Brown) */
@@ -81,13 +83,6 @@ h1, h2, h3 {
     background: var(--accent-gold);
     margin: 15px auto 0;
     border-radius: 2px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 40px;
 }
 
 /* Buttons */
@@ -363,32 +358,55 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
+/* Base styles for the card front face */
 .bio-front {
+    position: relative;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; /* Keeps text near the bottom as seen in your layout */
     justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
+/* Dark gradient overlay behind the text so it stays legible over photos */
 .bio-front::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(18, 16, 14, 0.9) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(18, 16, 14, 0.85) 90%);
+    z-index: 1;
 }
 
+/* Make sure text stays above the overlay */
 .bio-front h3 {
     position: relative;
     z-index: 2;
-    color: var(--text-primary);
-    font-size: 1.4rem;
+    text-align: center;
 }
 
-.bio-front.early-life { background-image: url('rizal_early_life.jpeg'); }
-.bio-front.education { background-image: url('rizal_education.jpg'); }
-.bio-front.travels { background-image: url('rizal_travels.jpg'); }
-.bio-front.writings { background-image: url('rizal_writings.jpg'); }
+/* Assign image files (adjust path/filenames to match your assets folder) */
+.bio-front.early-life {
+    background-image: url('assets/rizal_early_life.jpeg');
+}
+
+.bio-front.education {
+    background-image: url('assets/rizal_education.jpg');
+}
+
+.bio-front.travels {
+    background-image: url('assets/rizal_travels.jpg');
+}
+
+.bio-front.writings {
+    background-image: url('assets/rizal_writings.jpg');
+}
 
 .bio-back {
     background-color: var(--card-bg);
@@ -423,37 +441,82 @@ h1, h2, h3 {
     margin-top: 40px;
 }
 
+/* ==========================================================================
+   CARD "MORE ↗" BUTTON STYLING
+   ========================================================================== */
+.card-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-family: var(--font-heading, 'Cinzel', serif);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--accent-gold, #d4af37);
+    border: 1px solid var(--accent-gold, #d4af37);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    align-self: center; /* Centers the button horizontally in the card */
+}
+
+/* Hover Animation: Fills background and shifts arrow slightly up-right */
+.card-more-btn:hover {
+    background-color: var(--accent-gold, #d4af37);
+    color: #12100e; /* Dark text on gold background */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+}
+
+/* ==========================================================================
+   LITERARY BOOK CARDS BACKGROUND STYLING
+   ========================================================================== */
 .book-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes text to the bottom */
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-.book-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+/* Dark Overlay to make the gold/white text pop against the image */
+.book-card::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(180deg, rgba(18, 16, 14, 0.2) 0%, rgba(18, 16, 14, 0.92) 75%);
+    z-index: 1;
 }
 
-.book-cover img {
-    max-width: 180px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+/* Ensure text & button sit on top of the overlay */
+.book-card h3,
+.book-card .book-tag,
+.book-card p,
+.book-card .card-more-btn {
+    position: relative;
+    z-index: 2;
 }
 
-.book-tag {
-    display: inline-block;
-    color: var(--accent-gold);
-    font-family: var(--font-serif);
-    font-style: italic;
-    margin-bottom: 12px;
+/* Assign cover images (adjust filenames/paths to match your folder) */
+.book-card.noli {
+    background-image: url('assets/noli_me_tangere.jpg');
 }
 
+.book-card.fili {
+    background-image: url('assets/el_filibusterismo.jfif');
+}
 /* ==========================================================================
    TIMELINE (REVEAL EFFECT & DARK BROWN ACTIVE DOT)
    ========================================================================== */

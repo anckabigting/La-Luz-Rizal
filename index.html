@@ -23,7 +23,7 @@
     <div id="progress-bar"></div>
 
     <!-- Navigation Header -->
-    <header class="main-header">
+    <header class="main-header" id="home">
         <div class="pre-header">
             <p>“The youth is the hope of our future.” — Dr. José Rizal</p>
         </div>
@@ -89,7 +89,7 @@
     <section id="biography" class="content-section alt-bg">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">A Life Dedicated to Freedom</h2>
-            <p class="section-subtitle" data-aos="fade-up">Hover or tap cards to flip and discover key chapters of his life.</p>
+    
             
             <div class="bio-grid">
                 <div class="bio-item" data-aos="fade-up" data-aos-delay="100">
@@ -149,22 +149,25 @@
             <h2 class="section-title" data-aos="fade-up">Literary Works: The Pen as a Sword</h2>
             
             <div class="literary-grid">
-                <div class="book-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="book-cover">
-                        <img src="noli_me_tangere.jpg" alt="Noli Me Tangere Cover" onerror="this.src='https://via.placeholder.com/300x420?text=Noli+Me+Tangere'">
-                    </div>
+                <div class="book-card noli" data-aos="fade-up" data-aos-delay="100">
                     <h3>Noli Me Tángere</h3>
                     <span class="book-tag">Touch Me Not (1887)</span>
                     <p>A scathing exposure of Spanish clerical hypocrisy and colonial abuses. It awakened Filipino national consciousness and laid the moral groundwork for revolution.</p>
+                    <!-- MORE BUTTON -->
+                <a href="https://www.joserizal.com/works/noli-me-tangere-analysis/" target="_blank" rel="noopener noreferrer" class="card-more-btn">
+                    More ↗
+                </a>
                 </div>
 
-                <div class="book-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="book-cover">
-                        <img src="el_filibusterismo.jpg" alt="El Filibusterismo Cover" onerror="this.src='https://via.placeholder.com/300x420?text=El+Filibusterismo'">
-                    </div>
+                <div class="book-card fili" data-aos="fade-up" data-aos-delay="200">
                     <h3>El Filibusterismo</h3>
                     <span class="book-tag">The Reign of Greed (1891)</span>
                     <p>The darker, politically charged sequel exploring the tragic consequences of failed reforms, anger, and armed rebellion through the sinister character of Simoun.</p>
+                    <!-- MORE BUTTON -->
+                    <a href="https://www.joserizal.com/works/el-filibusterismo-analysis/" target="_blank" rel="noopener noreferrer" class="card-more-btn">
+                        More ↗
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -258,8 +261,9 @@
             &copy; <span id="copyright-year">2025</span> La Luz Rizal. All Rights Reserved.
         </p>
 
+        <!-- Inside <footer> -->
         <div class="footer-links">
-            <a href="#home">Back to Top ↑</a>
+            <a href="javascript:void(0);" id="back-to-top">Back to Top ↑</a>
         </div>
     </div>
 </footer>

@@ -1,32 +1,42 @@
-// Smooth Back-to-Top Handler
-const backToTopBtn = document.getElementById("back-to-top");
-
-if (backToTopBtn) {
-    backToTopBtn.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevents standard URL jump glitches
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-}
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Initialize AOS Scroll Animations
+    // 1. Smooth Back-to-Top Handler (Placed INSIDE DOMContentLoaded)
+    const backToTopBtn = document.getElementById("back-to-top");
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            
+            // Forces smooth scroll to top of window and document root
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            document.documentElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // 2. Initialize AOS Scroll Animations
     AOS.init({
         duration: 800,
         once: true,
         offset: 100
     });
 
-    // 2. Scroll Progress Bar Effect
+    // 3. Scroll Progress Bar Effect
     window.addEventListener("scroll", () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        document.getElementById("progress-bar").style.width = scrolled + "%";
+        const progressBar = document.getElementById("progress-bar");
+        if (progressBar) {
+            progressBar.style.width = scrolled + "%";
+        }
     });
 
-    // 3. Fact Carousel Logic
+    // 4. Fact Carousel Logic
     const factCards = document.querySelectorAll(".fact-card");
     const prevBtn = document.getElementById("prevFact");
     const nextBtn = document.getElementById("nextFact");
@@ -50,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 4. Interactive Rizal Quiz Engine
+    // 5. Interactive Rizal Quiz Engine
     const quizData = [
         {
             question: "What was the title of Jose Rizal's first patriotic novel?",
