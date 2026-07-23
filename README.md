@@ -1,17 +1,12 @@
-Here is a complete, well-structured `README.md` file tailored specifically for your project **La Luz Rizal**.
-
----
-
 # `README.md`
 
-```markdown
+
 # 📜 La Luz Rizal
 
 An interactive, vintage-themed educational website dedicated to exploring the life, literary masterpieces, and enduring legacy of Dr. José Rizal, the national hero of the Philippines.
 
 **Live Demo:** [la-luz-rizal.vercel.app](https://la-luz-rizal.vercel.app)
 
----
 
 ## 📌 Project Overview
 
