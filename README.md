@@ -65,7 +65,7 @@ la-luz-rizal/
 
 ## 🎓 Academic Acknowledgment
 
-Developed originally as an academic project for the **Life and Works of Rizal** course. Continued updates and maintenance aim to preserve and share Dr. José Rizal's intellectual legacy through accessible web technology.
+Developed originally as an academic project for the **Life and Works of Rizal** course. 
 
 > *"The youth is the hope of our future."* — Dr. José Rizal
 
