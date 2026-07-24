@@ -16,10 +16,9 @@ This project was originally created last year in partial fulfillment of the requ
 * **🏛️ Vintage Dark Colonial Aesthetics:** Customized color schemes featuring deep charcoal tones, rich gold accents, and colonial brown highlights suited to historical themes.
 * **🃏 Interactive 3D Biography Flip Cards:** Discover key chapters of Rizal's life through smooth 3D flipping cards detailing his early life, education, travels, and literary career.
 * **📜 Interactive Timeline:** Scroll-triggered, sequential reveal effect detailing major life events and milestones.
-* **📚 Literary Works Spotlight:** Visual cards showcasing Rizal’s major novels (*Noli Me Tángere* and *El Filibusterismo*) with layered background images and dark overlays.
-* **💡 Fast-Fact Carousel:** Dynamic interactive slider revealing interesting historical facts about Rizal.
+* **📚 Literary Works Spotlight:** Visual cards showcasing Rizal’s major novels (*Noli Me Tángere* and *El Filibusterismo*) with layered background images.
+* **💡 Fast-Fact Carousel:** Dynamic interactive slider revealing historical facts about Rizal.
 * **🧠 Interactive Rizal Quiz:** An engine testing knowledge of Rizal’s life, works, and historic impact with instant feedback and score tracking.
-* **🎯 Dynamic Active Navigation:** Auto-detects the active section on scroll and highlights the navigation bar accordingly.
 * **📱 Fully Responsive Design:** Fluid layouts optimized across all screen sizes (desktop, tablet, and mobile).
 
 ---
