@@ -19,7 +19,7 @@ This project was originally created last year in partial fulfillment of the requ
 * **📚 Literary Works Spotlight:** Visual cards showcasing Rizal’s major novels (*Noli Me Tángere* and *El Filibusterismo*) with layered background images.
 * **💡 Fast-Fact Carousel:** Dynamic interactive slider revealing historical facts about Rizal.
 * **🧠 Interactive Rizal Quiz:** An engine testing knowledge of Rizal’s life, works, and historic impact with instant feedback and score tracking.
-* **📱 Fully Responsive Design:** Fluid layouts optimized across all screen sizes (desktop, tablet, and mobile).
+
 
 ---
 
