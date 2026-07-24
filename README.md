@@ -57,35 +57,11 @@ la-luz-rizal/
 ## 🚀 Recent Improvements & Refinements
 
 * **Scrolling Reveal Animation:** Replaced standard animations with repeating Intersection Observers for smooth section reveals when scrolling both down and back up.
-* **Sequential Timeline Animation:** Updated timeline items to animate into view one by one as the user scrolls.
 * **Color Palette Overhaul:** Transitioned high-contrast red design elements into colonial dark brown shades (`#2B1B17` / `#3A231C`) to align with the historic theme.
-* **Dynamic Active Link Tracking:** Added scroll-position detection to highlight the current section in the main header navigation menu.
 * **Layout & Depth Polish:** Implemented locked aspect ratios and linear gradient overlays for all cards to guarantee text readability over background images.
 
 ---
 
-## 🏃 Local Setup & Development
-
-To run this project locally on your machine:
-
-1. **Clone the repository:**
-```bash
-git clone [https://github.com/your-username/la-luz-rizal.git](https://github.com/your-username/la-luz-rizal.git)
-
-```
-
-
-2. **Navigate to the project directory:**
-```bash
-cd la-luz-rizal
-
-```
-
-
-3. **Open the project:**
-Simply double-click `index.html` or launch it using VS Code's **Live Server** extension.
-
----
 
 ## 🎓 Academic Acknowledgment
 
